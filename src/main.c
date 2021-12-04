@@ -1,7 +1,14 @@
-#include "hash_table.h"
+#include <stdio.h>
+#include "../lib/hash-table.h"
 
 int main()
 {
-    ht_table *ht = ht_new();
-    delete_ht_table(ht);
+    Table* ht = ht_new();
+    ht_insert(ht,"34","Mike");
+    ht_insert(ht,"56","Time");
+    ht_insert(ht,"104","Love");
+    const char* value = ht_find(ht,"34");
+    printf("%s",value);
+    delete_Table(ht);
+
 }

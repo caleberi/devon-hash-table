@@ -1,4 +1,4 @@
-#include "prime.h"
+#include "../lib/prime.h"
 
 int is_prime(int n)
 {
