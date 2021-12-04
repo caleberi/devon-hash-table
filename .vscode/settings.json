@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "hash-table.h": "c",
+        "test.h": "c",
+        "string.h": "c",
+        "prime.h": "c"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "devon",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-g",
+                "${workspaceFolder}/src/*.c",
+                "-o",
+                "./main"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "test-devon",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-g",
+                "${workspaceFolder}/src/hash-table.c",
+                "${workspaceFolder}/src/prime.c",
+                "${workspaceFolder}/test/hash_table_test.c",
+                "-lcunit",
+                "-o",
+                "./main"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
